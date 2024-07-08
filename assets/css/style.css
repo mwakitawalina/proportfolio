@@ -90,7 +90,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #AD9451;
+  background: #D5AD3C;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -104,7 +104,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #49cbbb;
+  background: #AD9451;
   color: #fff;
 }
 
@@ -164,7 +164,7 @@ h6 {
 }
 
 .header-social-links a:hover {
-  color: #AD9451;
+  color: #D5AD3C;
 }
 
 /*--------------------------------------------------------------
@@ -273,7 +273,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #AD9451;
+  color: #D5AD3C;
 }
 
 .navbar .dropdown:hover>ul {
@@ -373,7 +373,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #AD9451;
+  color: #D5AD3C;
 }
 
 .navbar-mobile .getstarted,
@@ -462,11 +462,11 @@ h6 {
   transition: 0.5s;
   margin-top: 30px;
   color: #fff;
-  background: #AD9451;
+  background: #D5AD3C;
 }
 
 #hero .btn-about:hover {
-  background: #D4AD3D;
+  background: #AD9451;
 }
 
 @media (min-width: 1024px) {
@@ -528,7 +528,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #AD9451;
+  background: #D5AD3C;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -596,7 +596,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #555555;
+  color: #1d685f;
 }
 
 .about .content ul {
@@ -651,7 +651,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #AD9451;
+  background-color: #D5AD3C;
 }
 
 /*--------------------------------------------------------------
@@ -660,7 +660,7 @@ section {
 .facts .counters span {
   font-size: 48px;
   display: block;
-  color: #AD9451;
+  color: #D5AD3C;
 }
 
 .facts .counters p {
@@ -697,7 +697,7 @@ section {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  color: #1d685f;
 }
 
 .testimonials .testimonial-item h4 {
@@ -708,7 +708,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #AD9451;
+  color: #D5AD3C;
   font-size: 26px;
 }
 
@@ -746,11 +746,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #AD9451;
+  border: 1px solid #D5AD3C;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #AD9451;
+  background-color: #D5AD3C;
 }
 
 /*--------------------------------------------------------------
@@ -767,7 +767,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #AD9451;
+  border-left: 2px solid #D5AD3C;
   position: relative;
 }
 
@@ -787,7 +787,7 @@ section {
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #AD9451;
+  color: #D5AD3C;
 }
 
 .resume .resume-item ul {
@@ -811,7 +811,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #AD9451;
+  border: 2px solid #D5AD3C;
 }
 
 /*--------------------------------------------------------------
@@ -860,7 +860,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #222222;
+  color: #1d685f ;
   transition: ease-in-out 0.3s;
 }
 
@@ -973,7 +973,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #34b7a7;
+  background: #D5AD3C;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1246,7 +1246,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #AD9451;
+  background: #D5AD3C;
   border: 0;
   padding: 10px 30px 12px 30px;
   color: #fff;
@@ -1255,7 +1255,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #D4AD3D;
+  background: #AD9451;
 }
 
 @keyframes animate-loading {
