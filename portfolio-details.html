@@ -27,13 +27,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Kelly
-  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
@@ -49,40 +43,7 @@
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/mlindemtoto.jpeg" alt="">
-                </div>
-
-               <div class="swiper-slide">
-                  <img src="assets/img/webaccess.jpeg" alt="">
-                </div>
-
-             <!--   <div class="swiper-slide">
-                  <img src="assets/img/weblakay.jpeg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/webosiris.jpeg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/webport.jpeg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/jihusishe.jpeg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/graphic1.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/graphic2.png" alt="">
-                </div>
-              -->
-
+                <!-- Images will be dynamically inserted here -->
               </div>
               <div class="swiper-pagination"></div>
             </div>
@@ -90,22 +51,10 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>MlindeMtoto App</h3>
-              <ul>
-                <li><strong>Category</strong>: Mobile App</li>
-                <li><strong>Client</strong>: Lina Mwakitawa</li>
-                <li><strong>Project date</strong>: 24 March, 2023</li>
-                <li><strong>Project URL</strong>: <a href="https://play.google.com/store/apps/details?id=org.pwaniteknowgalz.mlindemtoto&hl=en_US">MlindeMtoto</a> <a href="https://play.google.com/store/apps/details?id=org.pwaniteknowgalz.mlindemtoto&hl=en_US">MlindeMtoto</a> </li>
-              
-              </ul>
+              <!-- Portfolio info will be inserted dynamically -->
             </div>
             <div class="portfolio-description">
-              <h2>About MlindeMtoto App</h2>
-              <p>
-                Mlinde Mtoto is a revolutionary app designed to keep your child safe and give you peace of mind, especially in crowded public places.
-                The app is inspired by the unfortunate incidents of children getting lost in malls or any public places. It aims to solve this problem
-                and make sure your child never gets lost again.              
-              </p>
+              <!-- Portfolio description will be inserted dynamically -->
             </div>
           </div>
         </div>
@@ -130,6 +79,122 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Script for dynamic loading of portfolio details -->
+  <script>
+    // Function to get query parameters from URL
+    function getQueryParam(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Example of mapping from item identifier to portfolio details
+      const portfolioDetails = {
+        'mlindemtoto': {
+          images: ['assets/img/mlindemtoto.jpeg'],
+          title: 'MlindeMtoto App',
+          category: 'Mobile App',
+          client: 'Lina Mwakitawa',
+          date: '24 March, 2023',
+          projecturl: 'https://play.google.com/store/apps/details?id=org.pwaniteknowgalz.mlindemtoto&hl=en_US',
+          description: 'Mlinde Mtoto is a revolutionary app designed to keep your child safe and give you peace of mind, especially in crowded public places.'
+        },
+        'Accessante': {
+          images: ['assets/img/webaccess.jpeg'],
+          title: 'Accessante Website',
+          category: 'Websites',
+          client: 'Lina Mwakitawa',
+          date: '24 April, 2023',
+          description: 'Accessante is a website designed to provide access to educational resources for children in underprivileged communities.'
+        },
+        'poster': {
+          images: ['assets/img/graphic1.png'],
+          title: 'Poster',
+          category: 'Graphics',
+          client: 'Lukenson',
+          date: '28 June 2024',
+          description: 'The poster is an advertisement for Online ESL English Classes for Haitan Immigrants in New Jersey.'
+        },
+        'jihusishe': {
+          images: ['assets/img/jihusishe.jpeg'],
+          title: 'Jihusishe',
+          category: 'Mobile App',
+          client: 'Hackathon',
+          date: '28 June 2022',
+          description: 'This App was created during the election period to help in promoting peace through sharing of peace related resources and also report any form of riots to the police or relevant authorities.'
+        },
+        'lakayaccesante': {
+          images: ['assets/img/weblakay.jpeg'],
+          title: 'Lakayaccesante',
+          category: 'Website',
+          client: 'Lukenson',
+          date: '24 April 2023',
+          description: 'Lakay Access Sante Inc. (LAS) is a non-profit organization operating exclusively for charitable purposes under Section 501(c)(3) of the Internal Revenue Code. We are dedicated to mobilizing, empowering, and connecting underserved individuals and communities with healthcare services and health-related resources (employment, education, food, transportation, housing, health insurance, etc.).'
+        },
+        'promotionposter': {
+          images: ['assets/img/graphic2.png'],
+          title: 'Promotion Poster',
+          category: 'Graphics',
+          client: 'PwaniTeknowgalz',
+          date: '12 June 2024',
+          description: 'The poster was create to seek for donations to increase impact of the Codehack program and create a brighter future for young girls in the tech industry. Every donation helps the organization get closer to a future where every girl has the opportunity to succeed and make a change in the fast growin digital  world.Codehack program is dedicated to empowering  young women from humble backgrounds by providing them with employable technology skills and support they need to thrive in the tech industry..'
+        },
+        'personalportfolio': {
+          images: ['assets/img/webport.jpeg'],
+          title: 'Personal Portfolio',
+          category: 'Websites',
+          client: 'Lina Mwakitawa',
+          date: '12 July 2024',
+          description: 'This is a portfolio website showcasing Lina Mwakitawas work and experience.'
+        },
+        'osirisj': {
+          images: ['assets/img/webosiris.jpeg'],
+          title: 'OsirisJ',
+          category: 'Websites',
+          client: 'OsirisJ',
+          date: '1 May 2024',
+          description: 'The website is on the clients Virtual infrastructure. A space where entrepreneurship meets cutting-edge social selling and marketing automation strategies. The guide through the evolving landscape of business in the AI-powered post-pandemic era.'
+        },
+
+
+        // Add more items as needed
+      };
+
+      // Get the item identifier from query parameter
+      const item = getQueryParam('item');
+
+      // Populate portfolio details based on the item identifier
+      if (item && portfolioDetails[item]) {
+        const details = portfolioDetails[item];
+
+        // Set the main images
+        const swiperWrapper = document.querySelector('.swiper-wrapper');
+        details.images.forEach(image => {
+          const slide = document.createElement('div');
+          slide.className = 'swiper-slide';
+          slide.innerHTML = `<img src="${image}" alt="${details.title}">`;
+          swiperWrapper.appendChild(slide);
+        });
+
+        // Set portfolio info
+        document.querySelector('.portfolio-info').innerHTML = `
+          <h3>${details.title}</h3>
+          <ul>
+            <li><strong>Category</strong>: ${details.category}</li>
+            <li><strong>Client</strong>: ${details.client}</li>
+            <li><strong>Project date</strong>: ${details.date}</li>
+          </ul>
+        `;
+
+        // Set portfolio description
+        document.querySelector('.portfolio-description').innerHTML = `
+          <h2>About ${details.title}</h2>
+          <p>${details.description}</p>
+        `;
+      }
+    });
+  </script>
 
 </body>
 
